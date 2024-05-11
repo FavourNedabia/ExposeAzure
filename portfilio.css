@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: aquamarine;
+    /* padding-top: 60px; */
+   
+  }
+  
+  .scrolling-text {
+    background-color: #e0b58d; /* couleur de fond de la bande de texte déroulante */
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color: #333; /* couleur de fond de la barre de navigation */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-title {
+    color: #f2f2f2; /* couleur du texte de la barre de navigation */
+    padding: 14px 20px;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  .nav-links a {
+    color: #f2f2f2; /* couleur du texte des liens de la barre de navigation */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+
+  .nav-links a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .content {
+    padding: 50px;
+    /* margin-top: 50px; Pour éviter que le contenu soit caché sous la barre de navigation */
+  }
+  .container {
+    background-color: antiquewhite;  /* couleur de fond du contenu */
+    border-radius: 15px; /* arrondir les coins du conteneur */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ombre portée */
+    padding: 20px; /* espacement à l'intérieur du conteneur */
+    margin: 20px auto; /* espacement autour du conteneur */
+    max-width: 800px; /* largeur maximale du conteneur */
+  }
+     
+ .content h2{
+    color:black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 25px;
+    margin-top: 20px
+    margin-left : 20px ;
+    padding: 22px;
+
+ }
+
+  .partie{
+    display: flex;
+  }
+    
+  .text{
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    
+    
+  }
+
+  .main h2{
+    margin-top: 20px;
+  }
+  
+ .image  img{
+    /* font-weight: bold; */
+    margin-left: 20px; /* Ajoute un espace à gauche de l'image */
+    transition: transform 2s; /* Transition de transformation sur 0.3 secondes */
+    opacity: 0.3;  /* L'image est initialement invisible */
+    animation: fadeIn 1s ease-in-out forwards; /* Animation d'apparition avec fadeIn */
+    
+  } 
+  
+  .image img:hover {
+    /* opacity: 1; Réduit l'opacité de l'image au survol */
+    transform: scale(1.3);
+  }
+
+   @keyframes fadeIn {
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* Cercle */
+  .circle-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #e0b58d;
+    margin-top: 3cm;
+  }
+
+  .circle {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Cache les parties de l'image qui dépassent */
+    width: 180px; /* Nouvelle largeur du cercle */
+    height: 180px; /* Nouvelle hauteur du cercle */
+    margin-bottom: 20px;
+    margin-top: 1cm;
+    border: 2px solid #000;
+    border-radius: 50%; /* Pour faire un cercle */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .circle img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .circle-title {
+    font-size: 18px;
+    color: #333;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+  }
+  
+
+  
+  .img {
+    width: 100%;
+    height: auto;
+   }
+
+  
+  
+  
